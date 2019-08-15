@@ -9,6 +9,9 @@ import { AboutComponent } from './about/about.component';
 import { DemoComponent } from './demo/demo.component';
 import { FilmComponent } from './film/film.component';
 import { ContactComponent } from './contact/contact.component';
+import { FilmItemComponent } from './film/film-item/film-item.component';
+import { SafeUrlPipe } from './safe-url.pipe';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     DemoComponent,
     FilmComponent,
-    ContactComponent
+    ContactComponent,
+    FilmItemComponent,
+    SafeUrlPipe
   ],
   imports: [
     BrowserModule

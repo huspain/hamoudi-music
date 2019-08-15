@@ -1,1 +1,22 @@
-<p>film works!</p>
+<div class="film-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="title-container">
+                <h2 class="title">Film Reel</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <h3>Genres</h3>
+                <div class="film-menu-container">
+                    <div class="film-menu-item" *ngFor="let item of filmArray" (click)="changeFilm(item.url)">
+                        <a>{{item.genre}}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <app-film-item [filmItemUrl] = "currentFilmUrl"></app-film-item>
+            </div>
+        </div>
+    </div>
+</div>

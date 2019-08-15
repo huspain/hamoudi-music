@@ -1,0 +1,16 @@
+app-film-item {
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+}
+
+.film-menu-container {
+    text-align: center;
+}
+.film-menu-item {
+    padding: 5px;
+    background-color: #503D6C;
+    border: 1px #000 solid;
+}
