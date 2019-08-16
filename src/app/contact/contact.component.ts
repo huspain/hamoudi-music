@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  @ViewChild('form', { static: true } ) contactForm : NgForm;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  onPost(postData: {name: string, email: string, message: string}) {
+    console.log(postData);
+  }
 }
