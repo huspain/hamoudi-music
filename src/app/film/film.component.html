@@ -1,20 +1,22 @@
-<div class="film-section section-padding">
+<div class="film-section section-padding background-secondary">
     <div class="container">
         <div class="row">
             <div class="title-container">
-                <h2 class="title">Film Reel</h2>
+                <h2 class="title">Film Work</h2>
+                <p>Select the genre below</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3">
                 <h3>Genres</h3>
                 <div class="film-menu-container">
-                    <div class="film-menu-item" *ngFor="let item of filmArray" (click)="changeFilm(item.url)">
+                    <div class="film-menu-item" *ngFor="let item of filmArray" (click)="changeFilm(item.url, item.active)" 
+                    [ngClass]="{active : item.active === currentActive}">
                         <a>{{item.genre}}</a>
                     </div>
                 </div>
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <app-film-item [filmItemUrl] = "currentFilmUrl"></app-film-item>
             </div>
         </div>

@@ -2,11 +2,12 @@
 
 /* General Styles */
 .header-section {
-    position: fixed;
+    position: absolute;
     z-index: 2;
-    background: rgba(0, 0, 0, 0) no-repeat center;
+    background: #1F1F1F no-repeat center;
     padding: 0px 0 0px 0;
     transition-duration: .5s;
+    width: 100%;
 }
 .header-nav { 
     padding-top: 30px;
@@ -19,6 +20,11 @@
 }
 .logo img.trans-logo {
     max-height: 50px;
+}
+
+.logo span {
+    font-size: 20px;
+    color: #252932;
 }
 
 /* Navigation styles */
@@ -42,17 +48,20 @@
     text-decoration: none;
 }
 
-/* scroll style changes */
-.header-section.scroll {
-    background-color: #1F1F1F;
-    transition-duration: .5s;
+/* mobile menu styles */
+#header-mobile-subsection {
+    background-color: #acacac;
+    padding: 0;
 }
-
-.header-section.scroll .nav-tabs li a {
-    color: #fff;
+.mobile-menu {
+    text-align: center;
+    width: 100%;
 }
-
-.header-section.scroll .nav-tabs li:hover a {
-    color:  #fff;
-    background-color: #44318D;
+.mobile-menu a {
+    display: block;
+    padding: 10px 0px 10px 0px;
+    border-bottom: #000 solid 1px;
+}
+.mobile-menu a:first-child {
+    border-top: #000 solid 1px;
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -10,12 +11,15 @@ export class ContactComponent implements OnInit {
 
   @ViewChild('form', { static: true } ) contactForm : NgForm;
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
   }
 
-  onPost(postData: {name: string, email: string, message: string}) {
-    console.log(postData);
+  onPost(postData: {name: string, email: string, subject: string, message: string}) {
+
+    this.http.post('https://hamoudi-digital.firebaseio.com/music.json', postData).subscribe()
+
+    this.contactForm.reset();
   }
 }

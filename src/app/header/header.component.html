@@ -1,12 +1,12 @@
 <!--Main header that is fixed to the top of the page-->
-<header class="header-section full-width" id="header">
+<header class="header-section full-width" [ngClass]="{scroll : activeState}">
     <div class="container" id="header-main">
         <div class="row">
         <!--Logo section-->
         <div class="col logo-container">
             <div class="logo"> 
             <a href="#">
-                <img src="../assets/logo.png">
+                <img src="../assets/logo.png" class="trans-logo">
             </a>
             </div>
         </div>
@@ -18,7 +18,7 @@
                     <a href="#home"><strong>Home</strong></a>
                 </li>
                 <li>
-                    <a href="#music"><strong>Music</strong></a>
+                    <a href="#demo"><strong>Music</strong></a>
                 </li>
                 <li>
                     <a href="#film"><strong>Film Work</strong></a>

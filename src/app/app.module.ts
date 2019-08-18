@@ -12,6 +12,8 @@ import { FilmComponent } from './film/film.component';
 import { ContactComponent } from './contact/contact.component';
 import { FilmItemComponent } from './film/film-item/film-item.component';
 import { SafeUrlPipe } from './safe-url.pipe';
+import { HeaderMobileComponent } from './header-mobile/header-mobile.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -25,11 +27,13 @@ import { SafeUrlPipe } from './safe-url.pipe';
     FilmComponent,
     ContactComponent,
     FilmItemComponent,
-    SafeUrlPipe
+    SafeUrlPipe,
+    HeaderMobileComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

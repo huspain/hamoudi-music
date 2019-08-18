@@ -11,6 +11,7 @@ export class FilmComponent implements OnInit {
 
   filmArray: FilmItem[];
   currentFilmUrl: string;
+  currentActive: number = 0;
 
   constructor(private filmService: FilmService) { }
 
@@ -19,7 +20,8 @@ export class FilmComponent implements OnInit {
     this.currentFilmUrl = "https://www.youtube.com/embed/w7HgKDyuArY";  
   }
 
-  changeFilm(url: string) {
+  changeFilm(url: string, active: number) {
     this.currentFilmUrl = url;
+    this.currentActive = active;
   }
 }

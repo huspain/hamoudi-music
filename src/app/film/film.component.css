@@ -11,6 +11,35 @@ h3 {
 }
 .film-menu-item {
     padding: 5px;
-    background-color: #503D6C;
-    border: 1px #000 solid;
+    background-color: #fff;
+    border-bottom: 1px #000 solid;
+    border-left: 1px #000 solid;
+    border-right: 1px #000 solid;
+    cursor: pointer;
+}
+.film-menu-item:first-child {
+    border-top: 1px #000 solid;
+}
+.film-menu-item:hover {
+    background-color: #44318D;
+    transition-duration: .3s;
+}
+.film-menu-item:hover a {
+    color: #fff;
+    transition-duration: .3s;
+}
+.film-menu-item.active {
+    background-color: #44318D;
+    transition-duration: .3s;
+}
+.film-menu-item.active a {
+    color: #fff;
+    transition-duration: .3s;
+}
+.col-md-9 {
+    margin-top: 43px !important;
+}
+
+@media(max-width: 767px) {
+
 }
