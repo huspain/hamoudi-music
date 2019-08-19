@@ -48,8 +48,8 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="form-group text-center thank-you-block" *ngIf="form.submitted">
-                                    <span class="thank-you">Thank you for submitting! I'll get back to you as soon as possible.</span>
+                                <div class="form-group text-center thank-you-block" *ngIf="form.submitted && !form.touched">
+                                    <span class="thank-you">Thank you for submitting! I'll get back to you as soon as I can.</span>
                                 </div>
                             </div>
                         </div>

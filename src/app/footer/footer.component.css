@@ -10,11 +10,18 @@
     padding-top: 5px;
     padding-bottom: 5px;
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
 }
-.footer-bottom-content span {
+.footer-bottom-content span,
+.footer-bottom-content a {
     font-size: 14px;
     color: #000;
+}
+
+.footer-bottom-content a:hover {
+    color: #44318D;
 }
 
 .footer-top-social {
