@@ -13,11 +13,11 @@
 .title-container {
     text-align: left;
 }
-.col-md-6.image {
-    margin-top: -100px;
+.col-lg-6.image {
+    margin-top: -00px;
 }
 
-@media(max-width: 767px) {
+@media(max-width: 991px) {
    .title-container {
        text-align: center;
    }
@@ -26,5 +26,8 @@
     }
     .about-text {
         margin-top: 50px;
+    }
+    .about-image {
+        padding-right: 0;
     }
 }

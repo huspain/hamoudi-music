@@ -13,8 +13,8 @@
         <!--Navigation section-->
         <div class="col-2 header-nav">
             <div class="navigation">
-                <a class="mobile-menu-toggle" (click)="toggleMobileMenu()" [ngClass]="mobileToggle ? 'active' : 'inactive' ">
-                <i class="fa fa-bars fa-2x"></i>
+                <a class="mobile-menu-toggle" (click)="toggleMobileMenu()">
+                <i class="fa fa-bars fa-2x" [ngClass]="mobileToggle ? 'active' : 'inactive' "></i>
                 </a>
             </div>
             </div>
@@ -22,7 +22,7 @@
     </div>
     <!--Hidden navigation menu. Activated when the nav icon is toggled-->
     <ng-container *ngIf="mobileToggle">
-        <div id="header-mobile-subsection">
+        <div id="header-mobile-subsection" [@mobileMenuState]>
             <div class="mobile-menu">
                 <a href="#home"><strong>Home</strong></a>
                 <a href="#demo"><strong>Music</strong></a>
