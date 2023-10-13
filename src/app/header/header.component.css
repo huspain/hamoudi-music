@@ -35,7 +35,6 @@
 }
 .nav-tabs li:hover a {
     border-bottom: none;
-    border-radius: 5px;
     color:  #533D6D;
     background-color: rgba(0, 0, 0, 0);
     transition-duration: .3s;
